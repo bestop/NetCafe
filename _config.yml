@@ -11,9 +11,9 @@ url:              http://ztpala.com
 domain:           ztpala.com
 email:            ztpala@gmail.com
 twitter_username: ztpala
-github_username:  pala
-github_repo:      https://github.com/pala/pala.github.io
-google_analytics: UA-5531632-1
+github_username:  bestop
+github_repo:      https://github.com/bestop/pala.github.io
+google_analytics: UA-5531632
 timezone:         America/New_York
 subscribe:        http://feed.ztpala.com
 baseurl: ""

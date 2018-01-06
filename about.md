@@ -19,8 +19,3 @@ Happiness is not about being immortal nor having food or rights in one's hand. I
 “积善之家有余庆”，提倡行善、积德，特别注意要有同情心，行善积德有好报。
 （6）摒弃掉感性所带来的烦恼：
 不要总是忿忿不平、杞人忧天、自寻烦恼。相反地，为了不致事后后悔，更应全身心地投入。
-
-<!-- Blog Comments -->
-<div class="media">
-  {% include comment.html %} 
-</div>

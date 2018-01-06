@@ -5,17 +5,17 @@ markdown:         kramdown
 permalink:        /:year/:month/:day/:title/
 
 # Setup
-title:            如是我聞
-description:      Keep Calm and Shoot Photos
-url:              http://ztpala.com
-domain:           ztpala.com
+title:            网络咖啡
+description:      Simple is best!
+url:              http://hijoe.net
+domain:           hijoe.net
 email:            ztpala@gmail.com
-twitter_username: ztpala
+twitter_username: bestop
 github_username:  bestop
 github_repo:      https://github.com/bestop/pala.github.io
-google_analytics: UA-5531632
+google_analytics: UA-55
 timezone:         America/New_York
-subscribe:        http://feed.ztpala.com
+subscribe:        http://feed.hijoe.net
 baseurl: ""
 theme: minima
 plugins:

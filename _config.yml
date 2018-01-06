@@ -5,7 +5,7 @@ markdown:         kramdown
 permalink:        /:year/:month/:day/:title/
 
 # Setup
-title:            网络咖啡
+title:            NetCafe
 description:      Simple is best!
 url:              http://hijoe.net
 domain:           hijoe.net

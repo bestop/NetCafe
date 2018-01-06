@@ -29,6 +29,6 @@ exclude:
 header_pages:
   - apps.md
   - tag.md
-  - category.md
   - archive.md
+  - about.md
   - search.html

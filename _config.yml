@@ -10,9 +10,9 @@ description:      Simple is best!
 url:              http://hijoe.net
 domain:           hijoe.net
 # email:            joe@gmail.com
-twitter_username: bestop
+# twitter_username: bestop
 # github_username:  bestop
-github_repo:      https://github.com/bestop/pala.github.io
+github_repo:      https://github.com/bestop/netcafe
 google_analytics: UA-55
 timezone:         America/New_York
 subscribe:        http://feed.hijoe.net

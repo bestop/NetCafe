@@ -27,7 +27,6 @@ exclude:
   - newpost.rb
   - CNAME
 header_pages:
-  - apps.md
   - tag.md
   - archive.md
   - about.md

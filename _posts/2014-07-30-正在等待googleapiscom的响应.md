@@ -1,9 +1,7 @@
 ---
 layout: post
-published: true
-title: 正在等待Googleapis.com的响应
-tags: 信息||Info    
-permalink: /2014-07-30-正在等待googleapiscom的响应.md
+title: "正在等待Googleapis.com的响应"
+category: "信息||Info"    
 ---
   如果你最近在访问WordPress或其它blog的时候，遇到正在等待ajax.googleapis.com的响应，或等待fonts.googleapis.com的响应；发生网页一片空白，加载很慢的情况，说明该博客正在调用Google的JS托管或字体库，因为某种众所周知的原因，该服务目前处于失效状态。
 解决方案，替换相应代码为国内的CDN公共库，即可让网站访问速度提升。   <br/>

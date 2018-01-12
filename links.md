@@ -3,7 +3,10 @@ layout: page
 title: 链接
 permalink: /links/
 ---
-
+<ul class="list-unstyled">
+  <li><a href="http://www.iplaysoft.com/">异次元软件</a></li>
+  <li><a href="http://forbetty.com/">BETTY DIARY</a></li>
+</ul>
 阮一峰: <http://www.ruanyifeng.com/blog/> <BR>         
 人生不过如此: <http://nana.blog.paowang.net> <BR>           
 人人都是产品经理: <http://iamsujie.com>  <BR> 

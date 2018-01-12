@@ -4,20 +4,18 @@ title: 链接
 permalink: /links/
 ---
 
-阮一峰: <http://www.ruanyifeng.com/blog/>          
-人生不过如此: <http://nana.blog.paowang.net>           
-人人都是产品经理: <http://iamsujie.com>          
-异次元软件: <http://www.iplaysoft.com>           
-日常生活的奇妙旅行: <http://www.ritazhou.com>           
-99U: <http://99u.com>          
-GTD Life: <http://www.gtdlife.com>           
-褪墨: <http://www.mifengtd.cn>              
-不许联想: <http://www.wangxiaofeng.me>           
-左岸读书: <http://www.zreading.cn>           
-扫地老僧的Blog: <http://www.doyj.com>           
-酷啡生活: <http://cooffee.net>          
-火狐范: <http://www.firefoxfan.com>             
-翁天信博客: <http://blog.dandyweng.com/>       
-[Tile Tale](https://itunes.apple.com/app/Tile-Tale/id577675173?mt=8)    
-
-
+阮一峰: <http://www.ruanyifeng.com/blog/> <BR>         
+人生不过如此: <http://nana.blog.paowang.net> <BR>           
+人人都是产品经理: <http://iamsujie.com>  <BR> 
+BETTY DIARY: <http://forbetty.com/>
+异次元软件: <http://www.iplaysoft.com> <BR>           
+日常生活的奇妙旅行: <http://www.ritazhou.com> <BR>           
+99U: <http://99u.com> <BR>          
+GTD Life: <http://www.gtdlife.com><BR>            
+褪墨: <http://www.mifengtd.cn> <BR>              
+不许联想: <http://www.wangxiaofeng.me> <BR>           
+左岸读书: <http://www.zreading.cn> <BR>           
+扫地老僧的Blog: <http://www.doyj.com> <BR>           
+酷啡生活: <http://cooffee.net><BR>           
+火狐范: <http://www.firefoxfan.com> <BR>             
+翁天信博客: <http://blog.dandyweng.com/> <BR>       

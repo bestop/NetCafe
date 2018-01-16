@@ -36,6 +36,6 @@ comments_provider: gitalk
 # https://github.com/gitalk/gitalk#install
 gitalk:    
   owner: bestop    
-  repo: blog-comments    
+  repo: netcafe    
   clientID: 902761aa4b0965b2b1f5    
   clientSecret: 56d2316c736e221f2aca6f6c17cb1050d3b83afd

@@ -35,8 +35,7 @@ header_pages:
   
 # Valine
 valine:
-  enable: true #true or false
-    el: '#vcomments' ,
+     el: '#vcomments' ,
     appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>',
     appKey: '<kjd4g2xge928HnTE66FRhTCz>',
     notify: true, 

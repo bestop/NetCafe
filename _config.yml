@@ -37,8 +37,8 @@ new Valine({
     el: '#vcomments' ,
     appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>',
     appKey: '<kjd4g2xge928HnTE66FRhTCz>',
-    notify:true, 
-    verify:false, 
+    notify: true, 
+    verify: false, 
     avatar:'mm', 
     placeholder: 'Say something' 
 });

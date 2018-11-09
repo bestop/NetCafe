@@ -32,6 +32,17 @@ header_pages:
   - about.md
   - notes.html
   - links.md
+  
+new Valine({
+    el: '#vcomments' ,
+    appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>',
+    appKey: '<kjd4g2xge928HnTE66FRhTCz>',
+    notify:true, 
+    verify:false, 
+    avatar:'mm', 
+    placeholder: '客官，别走' 
+});
+
 #comments_provider: gitalk
 ## https://github.com/gitalk/gitalk#install
 #gitalk:    

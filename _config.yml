@@ -39,7 +39,7 @@ new Valine({
     appKey: '<kjd4g2xge928HnTE66FRhTCz>',
     notify: true, 
     verify: false, 
-    avatar:'mm', 
+    avatar: 'mm', 
     placeholder: 'Say something' 
 });
 

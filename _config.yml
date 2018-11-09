@@ -40,7 +40,7 @@ new Valine({
     notify:true, 
     verify:false, 
     avatar:'mm', 
-    placeholder: '客官，别走' 
+    placeholder: 'Say something' 
 });
 
 #comments_provider: gitalk

@@ -33,7 +33,9 @@ header_pages:
   - notes.html
   - links.md
   
-new Valine({
+# Valine
+valine:
+  enable: true #true or false
     el: '#vcomments' ,
     appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>',
     appKey: '<kjd4g2xge928HnTE66FRhTCz>',
@@ -41,7 +43,6 @@ new Valine({
     verify: false, 
     avatar: 'mm', 
     placeholder: 'Say something' 
-});
 
 #comments_provider: gitalk
 ## https://github.com/gitalk/gitalk#install

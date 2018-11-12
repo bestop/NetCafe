@@ -34,15 +34,15 @@ header_pages:
   - links.md
   
 # Valine
-new Valine({
-    el: '#vcomments' ,
-    appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>',
-    appKey: '<kjd4g2xge928HnTE66FRhTCz>',
-    notify: false, 
-    verify: false, 
-    avatar: 'mm', 
-    placeholder: 'Say something' 
-});
+Valine
+  enable: true
+  el: '#vcomments' 
+  appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>'
+  appKey: '<kjd4g2xge928HnTE66FRhTCz>'
+  notify: false
+  verify: false
+  avatar: 'mm'
+  placeholder: 'Say something' 
 
 #comments_provider: gitalk
 ## https://github.com/gitalk/gitalk#install

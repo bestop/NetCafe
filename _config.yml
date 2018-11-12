@@ -34,7 +34,7 @@ header_pages:
   - links.md
   
 # Valine
-vcomments
+valine:
   enable: true
   appId: BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz
   appKey: kjd4g2xge928HnTE66FRhTCz

@@ -36,8 +36,8 @@ header_pages:
 # Valine
 vcomments
   enable: true
-  appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>'
-  appKey: '<kjd4g2xge928HnTE66FRhTCz>'
+  appId: BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz
+  appKey: kjd4g2xge928HnTE66FRhTCz
   notify: false
   verify: false
   avatar: mm

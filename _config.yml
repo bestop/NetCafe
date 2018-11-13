@@ -35,7 +35,6 @@ header_pages:
   
 # Valine
 valine:
-  el: vcomments
   enable: true
   appId: 'BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz'
   appKey: 'kjd4g2xge928HnTE66FRhTCz'

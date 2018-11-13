@@ -32,7 +32,8 @@ layout: default
 
 <div id="vcomments"></div>
     <script>
-        new Valine({
+      var valine = new Valine();
+      valine.init({
             el: '#vcomments',
             appId: '<BaWEmoIHs4yqQoH2qQYWu8ey-gzGzoHsz>',
             appKey: '<kjd4g2xge928HnTE66FRhTCz>'
@@ -40,7 +41,7 @@ layout: default
             verify:false, 
             avatar:'mm', 
             placeholder: 'just go' 
-        })
+       })
     </script>
 
 #<div id="gitalk-container"></div>

@@ -11,4 +11,5 @@ permalink: /links/
  <li><a href="http://iamsujie.com/" target="_blank">人人都是产品经理</a></li>
  <li><a href="http://www.gtdlife.com/" target="_blank">GTD Life</a></li>
  <li><a href="http://blog.dandyweng.com/" target="_blank">翁天信博客</a></li>
+ <li><a href="https://yihui.name/cn/" target="_blank">谢益辉博客</a></li>
 </ul>

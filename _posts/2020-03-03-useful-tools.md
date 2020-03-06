@@ -37,6 +37,7 @@ tags: [信息||Info]
 			夸克APP：极简聚合型浏览器
 		</li>
 	</ol>
+	<!-- more -->
 	<p style="color:#444444;font-family:&quot;font-size:14px;background-color:#FFFFFF;">
 		◆ 腾讯智图 ◆
 	</p>

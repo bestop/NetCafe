@@ -3,7 +3,7 @@ layout: page
 title: 关于
 permalink: /about/
 ---
-[Happiness](http://photo.hijoe.net/view/) is not about being immortal nor having food or rights in one's hand. It's about having each tiny wish come true,or having something to eat when you are hungry or having someone's love when you need love.  
+[Happiness](http://fanfou.com/hijoe) is not about being immortal nor having food or rights in one's hand. It's about having each tiny wish come true,or having something to eat when you are hungry or having someone's love when you need love.  
 
 #### 吾日三省
 （1）付出不亚于任何人的努力：

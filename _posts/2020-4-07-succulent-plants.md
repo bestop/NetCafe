@@ -4,7 +4,6 @@ category: "生活||Life"
 title:  "多肉心情"
 tags: [生活||Life]
 ---
-<p class="MsoNormal" align="left" style="text-align:left;">
   每逢清明谷雨前后，春回大地，草木萌动，种植的心情就会被随之唤醒。
   鉴于过往的经历，月季水仙打理起来稍有难度，花期也有限，还是种几颗小而萌的多肉吧。
   既可精心控养，亦可任性放养，亲疏两宜，这样不用担心辣手摧花，也不辜负了这大好春光。<br><br>
@@ -17,5 +16,5 @@ tags: [生活||Life]
   ![](/images/2020/dr3.JPG) ![](/images/2019/dr4.JPG)<BR>
   ![](/images/2020/dr5.JPG) ![](/images/2019/dr6.JPG)<BR>
   希望这些小家伙儿能坚持多几个冬夏。<br>
-  </p>
+  
 

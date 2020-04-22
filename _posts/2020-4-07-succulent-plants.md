@@ -12,9 +12,12 @@ tags: [生活||Life]
   多肉品种不同，有不同的光照要求，亦会呈现不同的姿态；多晒不等于暴晒，大夏天注意遮阳。<br>
   浇水秉承不干不浇，浇则浇透的原则，一般春秋冬生长季一周到半月一次，夏天休眠季一月一次为宜。<br>
   多肉喜光耐旱，喜欢通风干燥的环境，光照不足和浇水过多会引起徒长和仙逝。<br>
-  ![](/images/2020/dr1.JPG) ![](/images/2019/dr2.JPG)<BR>
-  ![](/images/2020/dr3.JPG) ![](/images/2019/dr4.JPG)<BR>
-  ![](/images/2020/dr5.JPG) ![](/images/2019/dr6.JPG)<BR>
+  ![](/images/2020/dr1.JPG) 
+  ![](/images/2020/dr2.JPG)<BR>
+  ![](/images/2020/dr3.JPG) 
+  ![](/images/2020/dr4.JPG)<BR>
+  ![](/images/2020/dr5.JPG) 
+  ![](/images/2020/dr6.JPG)<BR>
   希望这些小家伙儿能坚持多几个冬夏。<br>
   
 

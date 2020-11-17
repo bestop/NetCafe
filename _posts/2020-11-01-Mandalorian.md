@@ -4,11 +4,12 @@ category: "电影||Movie"
 title:  "曼达洛人"
 tags: [电影||Movie]
 ---
-  新的一季曼达洛人开播了，这是迪士尼首部“星球大战”真人剧集，也是最近最值得推荐的科幻剧，没有之一。
-  曼达洛人是谁？沉默寡言、威风凛凛的赏金猎人波巴·费特将带领我们揭开曼达洛人，一支全民尚武的战斗民族的神秘面纱。
+ <p> 
+新的一季曼达洛人开播了，这是迪士尼首部“星球大战”真人剧集，也是最近最值得推荐的科幻剧，没有之一。
+曼达洛人是谁？沉默寡言、威风凛凛的赏金猎人波巴·费特将带领我们揭开曼达洛人，一支全民尚武的战斗民族的神秘面纱。
   <br>
-  ![](/images/2020/mdl.jpg)<BR>
-    
+   <img src="/images/2020/mdl.jpg" /><br />
+ </p>   
   <p>
 	<h2 style="font-size:22px;font-family:Arial, Helvetica, sans-serif;color:#111111;background-color:#FFFFFF;">
 		Star Wars Canon和Star Wars Legends

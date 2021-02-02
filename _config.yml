@@ -32,6 +32,12 @@ header_pages:
   - about.md
   - notes.html
   - links.md
+  
+ # Deployment
+ deploy:
+ type: git
+ repo: https://github.com/bestop/hijoe.git
+ branch: master
  
 #comments_provider: gitalk
 ## https://github.com/gitalk/gitalk#install

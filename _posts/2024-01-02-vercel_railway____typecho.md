@@ -10,9 +10,11 @@ title: Vercel+Railway免费部署Typecho
 在[Typecho 官网](https://typecho.org/)下载正式版安装文件，解压到本地文件。<br>
 a. 编辑 install.php文件，注释掉第773行至775行；<br>
 
-```#    if (!$writeable) {//第773行
+```
+#    if (!$writeable) {//第773行
 #        $errors[] = _t('上传目录无法写入, 请手动将安装目录下的 %s 目录的权限设置为可写然后继续升级', $uploadDir);
-#    }//第775行```
+#    }//第775行
+```
 b. 根目录添加 vercel.json文件；<br>
 ```
 {

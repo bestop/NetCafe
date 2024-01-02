@@ -4,17 +4,15 @@ title: Vercel+Railway免费部署Typecho
 ---
 
 通常搭建一个动态博客都要有自己的服务器，今天介绍一下如何利用Vercel+Railway免费部署动态博客Typecho。<br><br>
-1. 利用[Railway](https://railway.app/)建立数据库<br>
+# 1. 利用[Railway](https://railway.app/)建立数据库<br>
 在Railway中新建项目，类型选择Provision MySQL，建好后在变量中获取相关数据库信息备用。<br><br>
-2. 配置Typecho<br>
+# 2. 配置Typecho<br>
 在[Typecho 官网](https://typecho.org/)下载正式版安装文件，解压到本地文件。<br>
 a. 编辑 install.php文件，注释掉第773行至775行；<br>
 
-```
-#    if (!$writeable) {//第773行
+```#    if (!$writeable) {//第773行
 #        $errors[] = _t('上传目录无法写入, 请手动将安装目录下的 %s 目录的权限设置为可写然后继续升级', $uploadDir);
-#    }//第775行
-```
+#    }//第775行```
 b. 根目录添加 vercel.json文件；<br>
 ```
 {
@@ -94,7 +92,7 @@ $db->addServer(array (
 Typecho_Db::set($db);
 ```
 根据第一步中得到的Railway 数据库信息更新对应的数据库参数。<br>
-3. 利用 [Vercel ](https://vercel.com/)部署<br>
+# 3. 利用 [Vercel ](https://vercel.com/)部署<br>
 a. 本地电脑安装并配置 vscode、node.js 和 npm，项目文件下通过 npm 安装 Vercel CLI，<br>
 `npm -g install vercel`
 <br>
@@ -130,7 +128,7 @@ No framework detected. Default Project Settings:
 <br>
 重点：由于 *.vercel.app 在国内无法访问，需在vercel内绑定域名。<br>
 CNAME  cname-china.vercel-dns.com<br>
-4. 安装 Typecho<br>
+# 4. 安装 Typecho<br>
 地址栏输入域名 /install.php进入Typecho安装界面。
 
 

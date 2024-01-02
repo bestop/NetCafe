@@ -27,8 +27,7 @@ b. 根目录添加 vercel.json文件；<br>
   "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }]
 }
 ```
-<br>
-注意：runtime 这里vercel-php如使用旧版本会因为与 Vercel 网站上设置的 Node.js 版本不兼容导致部署时报错，需更新至适配版本。
+注意：runtime 这里vercel-php如使用旧版本会因为与 Vercel 网站上设置的 Node.js 版本不兼容导致部署时报错，需更新至适配版本。<br>
 c. 根目录创建 api 目录并在目录下添加 index.php文件；<br>
 ```
 <?php
@@ -95,7 +94,6 @@ $db->addServer(array (
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
 ```
-<br>
 根据第一步中得到的Railway 数据库信息更新对应的数据库参数。<br><br>
 3. 利用 [Vercel ](https://vercel.com/)部署<br>
 a. 本地电脑安装并配置 vscode、node.js 和 npm，项目文件下通过 npm 安装 Vercel CLI，<br>
@@ -128,7 +126,6 @@ No framework detected. Default Project Settings:
 📝  Deployed to production. Run `vercel --prod` to overwrite later (https://vercel.link/2F).
 💡  To change the domain or build command, go to https://vercel.com/用户名/项目名称/settings
 ```
-<br>
 如果出现 Production 即可，如显示 Preview 时候需要运行，<br>
 `vc --prod`
 <br>

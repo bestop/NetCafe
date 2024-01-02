@@ -42,7 +42,6 @@ else
 }
 #echo $_SERVER["PHP_SELF"];
 ```
-<br>
 d. 根目录添加 config.inc.php文件。<br>
 ```
 <?php

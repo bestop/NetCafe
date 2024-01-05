@@ -2,6 +2,7 @@
 layout: page
 title: bm
 permalink: /bm/
+
 ---
  Bookmarks
 
@@ -14,9 +15,9 @@ Bookmarks
 
 ### DevOps
 
-[Configure for UI testing - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/ui-testing-considerations?view=azure-devops&tabs=mstest)
+[Configure for UI testing - Azure Pipelines  Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/ui-testing-considerations?view=azure-devops&tabs=mstest)
 
-[Run any tests in parallel - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/parallel-testing-vstest?view=azure-devops)
+[Run any tests in parallel - Azure Pipelines  Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/parallel-testing-vstest?view=azure-devops)
 
 [InstallShield制作安装包实现自动化\_游戏测试-CSDN博客\_installshield 自动化安装](https://blog.csdn.net/Hlearning/article/details/2742402?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
 

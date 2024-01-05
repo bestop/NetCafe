@@ -1,7 +1,7 @@
 ---
 layout: page
-title: w
-permalink: /w/
+title: bm
+permalink: /bm/
 ---
  Bookmarks
 

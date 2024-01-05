@@ -1,6 +1,7 @@
 ---
+layout: page
 title: w
-
+permalink: /w/
 ---
  Bookmarks
 

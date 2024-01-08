@@ -4,7 +4,6 @@ title: bm
 permalink: /bm/
 
 ---
- Bookmarks
 
 Bookmarks
 =========
@@ -15,9 +14,9 @@ Bookmarks
 
 ### DevOps
 
-[Configure for UI testing - Azure Pipelines  Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/ui-testing-considerations?view=azure-devops&tabs=mstest)
+[Configure for UI testing - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/ui-testing-considerations?view=azure-devops&tabs=mstest)
 
-[Run any tests in parallel - Azure Pipelines  Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/parallel-testing-vstest?view=azure-devops)
+[Run any tests in parallel - Azure Pipelines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/devops/pipelines/test/parallel-testing-vstest?view=azure-devops)
 
 [InstallShield制作安装包实现自动化\_游戏测试-CSDN博客\_installshield 自动化安装](https://blog.csdn.net/Hlearning/article/details/2742402?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
 
@@ -56,24 +55,6 @@ Bookmarks
 [检测耳机插入和拔出 - Alter - 博客园](https://www.cnblogs.com/qianyukun/p/6610780.html)
 
 [如何获取耳机是否已插入和耳机实时插拔情况？ - 鸿网互联](https://news.68idc.cn/buildlang/ask/20150328303074.html)
-
-### MedMae
-
-[苏州施莱医疗器械有限公司](http://www.sterilance.com/index.php?/product/cat-6/index.html)
-
-[健康小屋|自助体检机|健康体检机|智能体检机|社区居民健康管理|会员健康管理|企业员工健康管理|区域卫生信息平台|养老健康管理|智慧健康|智慧医疗|健康档案管理系统](http://www.lkang.cn/sms.html)
-
-[健康小屋--健康自助检测室--健康触控一体机--中医体质辨识--便携式健康一体机 >> 首页](http://www.cqchs.cn/)
-
-[拜耳健康小屋](http://www.4008100360.com/web/index.do)
-
-[软件需求分析(英文版) - 豆丁网](http://www.docin.com/p-545895866.html)
-
-[概念产品与产品概念设计\_百度文库](http://wenku.baidu.com/link?url=2uriv0XkQ-bBEZXbFKGaZwJ2odJ3qv40Y-vPlpLkGCtbjCWuVydXkQkWno7NDY_e3A5V3zC3-r7iVYXHtCJPGIswL4hphmOB6DHusZSRdSW)
-
-[产品概念设计报告\_百度文库](http://wenku.baidu.com/view/e606746b7e21af45b307a841.html?re=view)
-
-[徕康--社区健康小屋解决方案\_百度文库](http://wenku.baidu.com/view/76720a377fd5360cbb1adb1f.html)
 
 [Podio](https://podio.com/bybrickinterface/abb-replacement-care/)
 
@@ -961,6 +942,8 @@ Bookmarks
 
 [阿里云盘分享](https://www.aliyundrive.com/s/oNbgXpaeyUB)
 
+[Code Beautify and Code Formatter For Developers - to Beautify, Validate, Minify, JSON, XML, JavaScript, CSS, HTML, Excel and more](https://codebeautify.org/)
+
 ### BG
 
 ### XCX
@@ -1281,6 +1264,8 @@ Bookmarks
 
 [Building a Private ChatGPT Interface With Azure OpenAI](https://techcommunity.microsoft.com/t5/azure-architecture-blog/building-a-private-chatgpt-interface-with-azure-openai/ba-p/3869522)
 
+[关于个体户的几个误解 - V2EX](https://www.v2ex.com/t/961092)
+
 ### Joe
 
 [IFTTT / My Recipes](https://ifttt.com/myrecipes/personal)
@@ -1377,8 +1362,6 @@ Bookmarks
 
 [记录生活](https://mblog--bestop.repl.co/)
 
-[关于个体户的几个误解 - V2EX](https://www.v2ex.com/t/961092)
-
 [网易见外工作台](https://jianwai.youdao.com/index/0)
 
 [ChatGPT Web](https://chatgpt9527.up.railway.app/#/chat/1002)
@@ -1438,5 +1421,3 @@ Bookmarks
 [使用Next.js 13、Prisma、Postgresql 和 NextAuth 的全栈博客 - 知乎](https://zhuanlan.zhihu.com/p/652311461)
 
 [一个月超3万个GPTs！深扒全球Top 50 GPTs，谁是民间GPT王者？|翻译|top|访问量|搜索引擎|插件功能\_网易订阅](https://www.163.com/dy/article/IL8S2U09051180F7.html)
-
-[Search](http://www.searchmobileonline.com/?sourceid=1&app=S0jv5Rc6nH15%2FD9Z%2BMOBIGJmnUjqQdXy8741i4HkBm4hAGjOyvlcnhhYrTPpnPl7AHgtdhSkDl6ZqUGFjmtVphsnauOzX%2FsD)

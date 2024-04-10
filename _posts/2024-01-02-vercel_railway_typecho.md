@@ -1,5 +1,8 @@
 ---
+layout: post
+category: "信息||Info"
 title: Vercel+Railway免费部署Typecho
+tags: [信息||Info]
 
 ---
 

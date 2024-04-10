@@ -1,6 +1,8 @@
 ---
 layout: post
+category: "信息||Info"
 title: 使用Azure OpenAI构建私人聊天GPT界面
+tags: [信息||Info]
 
 ---
 网上有不少利用OpenAI构建私人聊天GPT界面的文章，不过鉴于OpenAI账号申请和访问难度，利用Azure OpenAI来构建私人GPT有一定优势。<br>

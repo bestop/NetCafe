@@ -20,3 +20,5 @@ Demo：
 [https://wk.hijoe.net/](https://wk.hijoe.net/)
 
 ![2024-10-05-15518.png](http://hijoe.net/assets/2024-10-05-15518.png)
+
+This message is used to verify that this feed (feedId:41446022334079019) belongs to me (userId:72441519020676096). Join me in enjoying the next generation information browser https://follow.is.

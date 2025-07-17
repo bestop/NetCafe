@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>抖音热门实时薪资计算器</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+  <!-- <script src="js/tailwindcss.js"></script>
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
+  <script src="js/vue.js"></script> -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FE2C55',
+            secondary: '#000000',
+            accent: '#FFFFFF',
+            darkgray: '#121212',
+            lightgray: '#F2F2F2'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .bg-gradient-douyin {
+        background: linear-gradient(135deg, #FE2C55 0%, #000000 100%);
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .animate-pulse-slow {
+        animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      .animate-count {
+        animation: count 1s ease-out;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div id="app" class="container mx-auto px-4 py-8 max-w-8xl">
+    <!-- 头部 -->
+    <header class="text-center mb-12">
+      <h1 class="text-[clamp(2rem,5vw,3rem)] font-bold text-primary mb-2">抖音热门实时薪资计算器</h1>
+      <p class="text-gray-600 text-lg">输入你的薪资信息，实时计算你的每小时价值和今日收入</p>
+    </header>
+    <!-- 主要内容区 -->
+    <main class="grid md:grid-cols-12 gap-8">
+      <!-- 左侧输入区 -->
+      <div class="md:col-span-3">
+        <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+          <h2 class="text-xl font-bold mb-4 flex items-center">
+            <i class="fa fa-calculator text-primary mr-2"></i>薪资信息
+          </h2>
+          <div class="space-y-4">
+            <div>
+              <label for="monthlySalary" class="block text-sm font-medium text-gray-700 mb-1">月薪 (元)</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+                  <i class="fa fa-cny"></i>
+                </span>
+                <input type="number" id="monthlySalary" v-model.number="monthlySalary"
+                  class="pl-10 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all"
+                  placeholder="输入你的月薪">
+              </div>
+            </div>
+            <div>
+              <label for="daysOff" class="block text-sm font-medium text-gray-700 mb-1">月休天数 (天)</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+                  <i class="fa fa-calendar-o"></i>
+                </span>
+                <input type="number" id="daysOff" v-model.number="daysOff"
+                  class="pl-10 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all"
+                  placeholder="输入你的月休天数">
+              </div>
+            </div>
+            <div>
+              <label for="workHoursPerDay" class="block text-sm font-medium text-gray-700 mb-1">每天工作小时 (小时)</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                <input type="number" id="workHoursPerDay" v-model.number="workHoursPerDay"
+                  class="pl-10 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all"
+                  placeholder="输入你每天的工作小时">
+              </div>
+            </div>
+            <button @click="calculate"
+              class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center">
+              <i class="fa fa-refresh mr-2"></i>计算薪资
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 中间实时计算区 -->
+      <div class="md:col-span-6">
+        <div class="bg-gradient-douyin text-white rounded-xl shadow-lg p-8 h-full flex flex-col card-hover">
+          <h2 class="text-2xl font-bold mb-8 flex items-center">
+            <i class="fa fa-line-chart mr-2"></i>实时薪资计算
+          </h2>
+          <div class="flex-1 flex flex-col">
+            <!-- 今日工作时长 -->
+            <div class="mb-10">
+              <p class="text-xl mb-4 text-center">今日工作时长</p>
+              <div class="flex items-center justify-center space-x-4">
+                <div
+                  class="w-32 text-center text-5xl font-bold bg-white/20 border border-white/30 rounded-xl focus:ring-2 focus:ring-white/50 outline-none transition-all">
+                  {{todayWorkHours}}</div>
+                <span class="text-4xl">小时</span>
+              </div>
+              <div class="flex justify-center space-x-8 mt-4">
+                <p class="text-center text-yellow-300 text-xl">
+                  <i class="fa fa-bolt mr-2"></i>每秒赚 <span class="font-bold animate-count">{{
+                    perSecondEarnings.toFixed(2) }}</span> 元
+                </p>
+                <p class="text-center text-yellow-300 text-xl">
+                  <i class="fa fa-clock-o mr-2"></i>每分钟赚 <span class="font-bold animate-count">{{
+                    perMinuteEarnings.toFixed(2) }}</span> 元
+                </p>
+              </div>
+            </div>
+            <!-- 薪资计算结果 -->
+            <div class="grid grid-cols-3 gap-6 w-full">
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 transform transition-all hover:scale-105">
+                <p class="text-lg opacity-80 mb-2 text-center">时薪</p>
+                <p class="text-4xl font-bold text-center">{{ hourlyRate.toFixed(2) }} 元/小时</p>
+              </div>
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 transform transition-all hover:scale-105">
+                <p class="text-lg opacity-80 mb-2 text-center">日薪</p>
+                <p class="text-4xl font-bold text-center">{{ dailySalary.toFixed(2) }} 元/天</p>
+              </div>
+              <div
+                class="bg-yellow-500/20 backdrop-blur-sm rounded-xl p-6 transform transition-all hover:scale-105 border border-yellow-300/50">
+                <p class="text-lg opacity-80 mb-2 text-center">今日已赚</p>
+                <p class="text-5xl font-bold text-center text-yellow-300 animate-pulse-slow">{{ todayEarnings.toFixed(2)
+                  }} 元</p>
+              </div>
+            </div>
+            <!-- 时间进度条 -->
+            <div class="mt-10">
+              <div class="flex justify-between text-sm mb-2">
+                <span>今日工作进度</span>
+                <span>{{ Math.round(todayWorkHours / workHoursPerDay * 100) }}%</span>
+              </div>
+              <div class="w-full bg-white/20 rounded-full h-4">
+                <div class="bg-yellow-400 h-4 rounded-full"
+                  :style="{ width: (todayWorkHours / workHoursPerDay * 100) + '%' }"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 text-xs opacity-70 text-center">
+            <p>数据每 <span class="font-bold">{{ updateInterval / 1000 }}</span> 秒自动更新</p>
+          </div>
+        </div>
+      </div>
+      <!-- 右侧预测收入区 -->
+      <div class="md:col-span-3">
+        <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+          <h2 class="text-xl font-bold mb-4 flex items-center">
+            <i class="fa fa-pie-chart text-primary mr-2"></i>本月预测收入
+          </h2>
+          <div class="space-y-4">
+            <div class="bg-blue-50 border border-blue-100 rounded-lg p-4">
+              <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-medium">已工作天数</span>
+                <span class="font-bold text-lg">{{ daysWorked }} 天</span>
+              </div>
+              <div class="mt-2 text-sm text-gray-600">
+                <div class="flex justify-between">
+                  <span>本月共</span>
+                  <span>{{ workingDaysPerMonth }} 工作日</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div class="bg-blue-400 h-2 rounded-full"
+                    :style="{ width: (daysWorked / workingDaysPerMonth * 100) + '%' }"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-green-50 border border-green-100 rounded-lg p-4">
+              <div class="flex justify-between items-center">
+                <span class="text-green-600 font-medium">已赚金额</span>
+                <span class="font-bold text-lg text-green-600">{{ (daysWorked * dailySalary + todayEarnings).toFixed(2)
+                  }} 元</span>
+              </div>
+              <div class="mt-2 text-sm text-gray-600">
+                <div class="flex justify-between">
+                  <span>目标月薪</span>
+                  <span>{{ monthlySalary }} 元</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div class="bg-green-400 h-2 rounded-full"
+                    :style="{ width: ((daysWorked * dailySalary + todayEarnings) / monthlySalary * 100) + '%' }"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-yellow-50 border border-yellow-100 rounded-lg p-4">
+              <div class="flex justify-between items-center">
+                <span class="text-yellow-600 font-medium">剩余工作日</span>
+                <span class="font-bold text-lg">{{ remainingWorkingDays }} 天</span>
+              </div>
+              <div class="mt-2 text-sm text-gray-600">
+                <div class="flex justify-between">
+                  <span>距离发薪日</span>
+                  <span>{{ remainingWorkingDays + Math.floor(remainingWorkingDays / (workingDaysPerMonth / daysOff)) }}
+                    天</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div class="bg-yellow-400 h-2 rounded-full"
+                    :style="{ width: (100 - (daysWorked / workingDaysPerMonth * 100)) + '%' }"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-purple-50 border border-purple-100 rounded-lg p-4">
+              <div class="flex justify-between items-center">
+                <span class="text-purple-600 font-medium">预计总收入</span>
+                <span class="font-bold text-lg text-purple-600">{{ (monthlySalary * (daysWorked * dailySalary +
+                  todayEarnings) / (workingDaysPerMonth * dailySalary)).toFixed(2) }} 元</span>
+              </div>
+              <div class="mt-2 text-sm text-gray-600">
+                <div class="flex justify-between">
+                  <span>波动范围</span>
+                  <span>&plusmn;{{ (monthlySalary * 0.05).toFixed(2) }} 元</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                  <div class="bg-purple-400 h-2 rounded-full"
+                    :style="{ width: (((daysWorked * dailySalary + todayEarnings) / (workingDaysPerMonth * dailySalary)) * 100) + '%' }">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- 页脚 -->
+    <footer class="mt-12 text-center text-gray-500 text-sm">
+      <p>抖音热门实时薪资计算器 &copy; 2025 <a href="https://www.frbkw.com/" target="_blank">By:Yinfengrui</a> <a
+          href="https://mp.weixin.qq.com/s/NueyrwecHjG1x-iFV9TmlQ" target="_blank">公众号：枫瑞博客网</a></p>
+      <p class="mt-1">仅供参考，实际薪资以公司发放为准</p>
+    </footer>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        monthlySalary: 10000,
+        daysOff: 4,
+        workHoursPerDay: 8,
+        todayWorkHours: 0,
+        updateInterval: 1000,
+        timer: null
+      },
+      computed: {
+        workingDaysPerMonth() {
+          return 30 - this.daysOff;
+        },
+        hourlyRate() {
+          return this.monthlySalary / (this.workingDaysPerMonth * this.workHoursPerDay);
+        },
+        dailySalary() {
+          return this.hourlyRate * this.workHoursPerDay;
+        },
+        todayEarnings() {
+          return this.hourlyRate * this.todayWorkHours;
+        },
+        daysWorked() {
+          // 假设每月1号开始工作，这里简化为当前日期减去休息日
+          const today = new Date();
+          const dayOfMonth = today.getDate();
+          return Math.max(0, dayOfMonth - Math.floor(dayOfMonth / 7) * this.daysOff);
+        },
+        remainingWorkingDays() {
+          return this.workingDaysPerMonth - this.daysWorked;
+        },
+        perSecondEarnings() {
+          return this.hourlyRate / 3600;
+        },
+        perMinuteEarnings() {
+          return this.hourlyRate / 60;
+        }
+      },
+      mounted() {
+        this.calculate();
+        this.startTimer();
+      },
+      beforeDestroy() {
+        this.stopTimer();
+      },
+      methods: {
+        calculate() {
+          // 添加简单验证
+          if (this.monthlySalary <= 0) {
+            alert('请输入有效的月薪金额');
+            this.monthlySalary = 10000;
+            return;
+          }
+          if (this.daysOff < 0 || this.daysOff > 30) {
+            alert('月休天数应在0-30天之间');
+            this.daysOff = 4;
+            return;
+          }
+          if (this.workHoursPerDay <= 0 || this.workHoursPerDay > 24) {
+            alert('每天工作小时应在1-24小时之间');
+            this.workHoursPerDay = 8;
+            return;
+          }
+          // 计算今日工作时长（模拟：假设工作时间是9点到18点，午休1小时）
+          const now = new Date();
+          const hour = now.getHours();
+          const minute = now.getMinutes();
+          if (hour >= 9 && hour < 18) {
+            let workHours = hour - 9;
+            if (hour >= 13) workHours -= 1; // 减去午休时间
+            // 添加分钟部分
+            workHours += minute / 60;
+            // 如果还没到午休时间
+            if (hour < 12) {
+              this.todayWorkHours = workHours;
+            } else {
+              this.todayWorkHours = Math.max(0, workHours);
+            }
+          } else if (hour >= 18) {
+            this.todayWorkHours = 8; // 假设一天工作8小时
+          } else {
+            this.todayWorkHours = 0; // 还没开始工作
+          }
+          this.updateTodayEarnings();
+        },
+        updateTodayEarnings() {
+          // 确保今日工作时长合理
+          if (this.todayWorkHours < 0) this.todayWorkHours = 0;
+          if (this.todayWorkHours > this.workHoursPerDay) this.todayWorkHours = this.workHoursPerDay;
+        },
+        startTimer() {
+          this.timer = setInterval(() => {
+            // 每秒钟更新一次
+            this.todayWorkHours += 1 / 3600; // 增加1秒的工作时间
+            if (this.todayWorkHours > this.workHoursPerDay) {
+              this.todayWorkHours = this.workHoursPerDay;
+            }
+          }, this.updateInterval);
+        },
+        stopTimer() {
+          if (this.timer) {
+            clearInterval(this.timer);
+            this.timer = null;
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

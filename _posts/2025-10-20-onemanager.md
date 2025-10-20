@@ -1,7 +1,8 @@
 ---
 title: OneManager：解锁多网盘访问的轻量级解决方案
 layout: post
-
+category: "信息||Info"
+tags: [信息||Info]
 ---
 近期公司网络调整，部分常用网盘服务出现访问障碍。在寻找替代方案时，偶然回想起曾部署过的OneManager工具，测试后发现其仍能正常访问，这着实令人惊喜。
 

@@ -1,7 +1,8 @@
 ---
 title: 空山新雨之碧坞龙潭游记
 layout: post
-
+category: "生活||Life"
+tags: [生活||Life]
 ---
 
 ![2024-08-05-160556.jpg](http://hijoe.net/assets/2024-08-05-160556.jpg)

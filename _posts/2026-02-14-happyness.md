@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 幸福，藏在寻常光景里
-
+category: "生活||Life"
+tags: [生活||Life]
 ---
 
 ![2026-02-00-992851.jpeg](http://hijoe.net/assets/2026-02-00-992851.jpeg)
